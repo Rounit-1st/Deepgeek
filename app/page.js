@@ -19,11 +19,11 @@ export default function Home() {
           <Image onClick={()=> {expand ? setExpand(false): setExpand(true)}} className="rotate-180" src={assets.menu_icon} alt="" />
           <Image className="opacity-70" src={assets.chat_icon} alt="" />
         </div>
-        {messages.length === 1 ? (
+        {messages.length === 0 ? (
             <>
               <div className="flex items-center gap-3">
                 <Image src={assets.logo_icon} alt="" className="h-16" />
-                <p className="text-2xl font-medium">Hey I'm DeepGeek</p>
+                <p className="text-2xl font-medium">Hey I&#39;m DeepGeek</p>
               </div>
               <p>How can I help you today ? </p>
             </>
